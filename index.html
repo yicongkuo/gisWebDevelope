@@ -1,1 +1,270 @@
-Hello!!
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		
+		<title>ArcGIS </title>
+		<link rel="icon" type="image/png" href="image/logo/idt.png">
+		
+		<meta name="description" content="學ArcGIS API for Javascript">
+		<meta name="author" content="Yi-Cong, Kuo">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+			img{
+				-webkit-border-radius: 20px 20px 20px 20px;
+				border-radius: 20px 20px 20px 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="reveal">
+			<div class="slides">
+				
+				<!-- 1. 首頁 -->
+				<section>
+					<section>
+						<h1>ArcGIS Server</h1>
+						<h3>地圖網頁製作</h3>
+						<p><small>
+							<a href="#/1">ArcGIS開發者資源</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/2">開發工具</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/3">dojo / dijit</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/4">ArcGIS API for Javascript</a>
+						</small></p>
+					</section>
+					
+					<section>
+						<h2>作者</h2>
+						<img src="image/author/yicong.jpg" alt="郭譯聰" title="郭譯聰">	
+						<p><small><a href="http://www.esri.tw" target="_blank">互動國際數位</a> / <a href="mailto:yicong@igis.com.tw">郭譯聰</a> 製作</small></p>
+					</section>
+				</section>
+				
+				<!-- 2. Development Resource -->
+				<section>				
+					<section>
+						<h1>ArcGIS開發者資源</h1>
+						<p><small>
+							<a href="#/1" style="color:orange">ArcGIS開發者資源</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/2">開發工具</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/3">dojo / dijit</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/4">ArcGIS API for Javascript</a>
+						</small></p>
+					</section>
+
+					<section>
+						<h2>ArcGIS Developer</h2>
+						<a href="https://developers.arcgis.com/en/" target="_blank">
+							<img src="image/introduction/01.jpg" title="ArcGIS Developer" alt="ArcGIS Developer web site">
+						</a>	
+					</section>
+					
+					<section>
+						<h2>下載SDK及API說明文件</h2>
+						<a href="https://developers.arcgis.com/en/downloads/" target="_blank">	
+							<img src="image/introduction/02.jpg" alt="Download SDK">
+						</a>
+					</section>
+
+					<section>
+						<h2>各式開發文件連結</h2>
+						<a href="https://developers.arcgis.com/documentation/" target="_blank">
+							<img src="image/introduction/03.jpg" alt="Document">
+						</a>
+					</section>
+
+					<section>
+						<h2>ArcGIS API for Javascript 線上文件</h2>
+						<a href="https://developers.arcgis.com/javascript/" target="_blank">
+							<img src="image/introduction/04.jpg" alt="ArcGIS API for Javascript Document">
+						</a>
+					</section>
+
+					<section>
+						<h2>教學文件</h2>
+						<a href="https://developers.arcgis.com/javascript/jshelp/intro_firstmap_amd.html" target="_blank">
+							<img src="image/introduction/05.jpg" alt="ArcGIS API for Javascript tutorial">
+						</a>
+					</section>
+
+					<section>
+						<h2>範例程式</h2>
+						<a href="https://developers.arcgis.com/javascript/jssamples/#latest_samples" target="_blank">
+							<img src="image/introduction/06.jpg" alt="ArcGIS API for Javascript Sample Code">
+						</a>
+					</section>
+
+					<section>
+						<h2>API參考文件</h2>
+						<a href="https://developers.arcgis.com/javascript/jsapi/" target="_blank">
+							<img src="image/introduction/07.jpg" alt="ArcGIS API for Javascript API Reference">
+						</a>
+					</section>
+
+					<section>
+						<h2>Esri GitHub</h2>
+						<a href="https://esri.github.io/" target="_blank">
+							<img src="image/introduction/08.jpg" title="Esri GitHub" alt="Esri GitHub">
+						</a>					
+					</section>
+				
+				</section><!-- End of page 2 -->
+				
+				<!-- 3. Tools -->
+				<section>
+					<section>
+						<h1>開發工具</h1>
+						<p><small>
+							<a href="#/1">ArcGIS開發者資源</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/2" style="color:orange">開發工具</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/3">dojo / dijit</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/4">ArcGIS API for Javascript</a>
+						</small></p>
+					</section>
+					
+					<section>
+						<h2>文字編輯器與IDE</h2>
+						<a href="https://notepad-plus-plus.org/" target="_blank">
+							<img src="image/devTool/notepadPlusPlus.png" title="NotePad++" alt="NotePad++">
+						</a>&nbsp;&nbsp;&nbsp;
+
+						<a href="http://www.sublimetext.com/" target="_blank">
+							<img src="image/devTool/sublimeText.png" title="Sublime Text" alt="Sublime Text">
+						</a><br />
+						
+						<a href="https://www.visualstudio.com/" target="_blank">
+							<img src="image/devTool/visualStudio.png" title="Visual Studio" alt="Visual Studio">
+						</a>&nbsp;&nbsp;&nbsp;
+
+						<a href="http://www.aptana.com/" target="_blank">
+							<img src="image/devTool/aptanaStudio.png" title="Aptana Studio" alt="Aptana Studio">
+						</a>
+					</section>
+
+					<section>
+						<h2>線上編輯環境</h2>
+						<a href="http://developers.arcgis.com/javascript/sandbox/sandbox.html?sample=map_simple" target="_blank">
+							<img src="image/devTool/esri.png" title="ArcGIS API for Javascript Sandbox" alt="ArcGIS API for Javascript Sandbox">
+						</a>&nbsp;&nbsp;&nbsp;
+
+						<a href="http://jsbin.com/?html,output" target="_blank">
+							<img src="image/devTool/jsbin.png" title="JS Bin" alt="JS Bin">
+						</a><br />
+						
+						<a href="https://jsfiddle.net/" target="_blank">
+							<img src="image/devTool/jsFiddle.png" title="JSFiddle" alt="JSFiddle">
+						</a>&nbsp;&nbsp;&nbsp;
+
+						<a href="http://codepen.io/pen/" target="_blank">
+							<img src="image/devTool/codePan.png" title="CodePen" alt="CodePen">
+						</a>
+					</section>					
+				</section>
+
+				<!-- 4. dojo.js -->
+				<section>
+					<section>
+						<h1>dojo / dijit</h1>
+						<p><small>
+							<a href="#/1">ArcGIS開發者資源</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/2">開發工具</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/3" style="color:orange">dojo / dijit</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/4">ArcGIS API for Javascript</a>
+						</small></p>
+					</section>
+
+					<section>
+						<h2>模組與套件</h2>
+					</section>
+					
+					<section>
+						<h2>載入模組</h2>
+					</section>
+
+					<section>
+						<h2>版面設定</h2>
+						<a class="jsbin-embed" href="http://jsbin.com/xavica/13/embed?html,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script>
+					</section>
+				</section>
+
+				<!-- 5. ArcGIS API for Javascript -->
+				<section>
+					<section>
+						<h1>ArcGIS API for Javascript</h1>
+						<p><small>
+							<a href="#/1">ArcGIS開發者資源</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/2">開發工具</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/3">dojo / dijit</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#/4" style="color:orange">ArcGIS API for Javascript</a>
+						</small></p>
+					</section>
+					
+					<section>
+						<h2>加入ArcGIS Online底圖</h2>
+
+					</section>
+				</section>
+
+			</div><!-- End of Slide -->
+		</div><!-- End of reveal.js -->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				// Display the page number of the current slide
+    			slideNumber: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
