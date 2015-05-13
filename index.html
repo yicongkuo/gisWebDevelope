@@ -201,11 +201,83 @@
 					</section>
 
 					<section>
-						<h2>模組與套件</h2>
+						<h2>什麼是<span style="text-transform:capitalize">dojo</span></h2>
+						<ul>
+							<li class="fragment roll-in">Javascript寫的工具包</li>
+							<li class="fragment roll-in">能解決跨瀏覽器問題</li>
+							<li class="fragment roll-in">縮短程式碼</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>長這樣</h3>
+						<a href="http://dojotoolkit.org/documentation/tutorials/1.10/modules/index.html" target="_blank"
+						title="工具包與模組">
+							<img src="image/dojo/01.jpg">
+						</a>
+					</section>
+
+					<section>
+						<h2 style="text-transform:capitalize">ArcGIS API for Javascript</h2>
+						<a href="http://dojotoolkit.org/documentation/tutorials/1.10/modules/index.html" target="_blank"
+						title="dojo模組">
+							<img src="image/dojo/02.jpg">
+						</a>
+						<p>+</p>					
+						<div><a href="https://developers.arcgis.com/javascript/jshelp/inside_dojo.html" target="_blank"
+						title="ArcGIS模組">
+							<img src="image/dojo/03.jpg">
+						</a></div>
+					</section>
+
+					<section>
+						<h3>怎麼用</h3>
+						<p class="fragment" style="color:rgb(255, 255, 112);">第一步、將下面兩行貼到程式碼中</p>				
+						<pre class="fragment"><code class="html">
+&lt;link rel="stylesheet" href="http://js.arcgis.com/3.13/esri/css/esri.css"&gt;
+&lt;script src="http://js.arcgis.com/3.13/"&gt;&lt;/script&gt;			
+						</code></pre>					
 					</section>
 					
 					<section>
-						<h2>載入模組</h2>
+						<p style="color:rgb(255, 255, 112);">第二步、載入需要用到的模組</p>						
+						<pre class="fragment"><code class="javascript" data-trim contenteditable>
+require([
+	
+	// esri's map module
+	"esri/map",
+	
+	// dojo's dom module
+	"dojo/dom",
+	
+	// dojo plugin
+	"dojo/domReady!"
+
+], function (Map, dom){ // module name as callback function argument 
+	
+	// start write something
+
+});
+						</code></pre>
+					</section>
+
+					<section>
+						<p style="color:rgb(255, 255, 112);">第三步、建立物件</p>						
+						<pre class="fragment"><code class="javascript" data-trim contenteditable>
+require([
+	"esri/map",
+	"dojo/dom",
+	"dojo/domReady!"
+], function (Map, dom){	
+	
+	// Create Map Object
+	var map = new Map("map", {
+		center: [120.986695, 23.884165], // map center
+		zoom: 8,
+		basemap: "topo"	// arcgis online hosted basemap 
+	});
+});
+						</code></pre>
 					</section>
 
 					<section>
