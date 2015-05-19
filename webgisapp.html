@@ -42,51 +42,120 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>建立web GIS app</h1>
-					<p><small>
-						<a href="index.html#/1">ArcGIS開發者資源</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-						<a href="index.html#/2">開發工具</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-						<a href="index.html#/3">dojo / dijit</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-						<a href="#" style="color:orange">建立web GIS app</a>
-					</small></p>
+					<section>
+						<h1>建立web GIS app</h1>
+						<p><small>
+							<a href="index.html#/1">ArcGIS開發者資源</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="index.html#/2">開發工具</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="index.html#/3">dojo / dijit</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="#" style="color:orange">建立web GIS app</a>
+						</small></p>
+					</section>
+
+					<section>
+						<h2><a href="example.zip">範例程式下載</a></h2>
+					</section>
 				</section>
-				
 				<!-- map &. layer -->
 				<section>					
 					<section>
-						<h1>Map & Layer</h1>
+						<h1>地圖</h1>
 					</section>
 
 					<section>					
-						<h2><a href="https://developers.arcgis.com/javascript/jsapi/map-amd.html" target="_blank">Map</a></h2>
+						<h2><a href="https://developers.arcgis.com/javascript/jsapi/map-amd.html" target="_blank">地圖(Map)</a></h2>
 						<a class="jsbin-embed" href="http://jsbin.com/hiququ/8/embed?html,js,output">Add map</a><script src="http://static.jsbin.com/js/embed.js"></script>
 					</section>
 
 					<section>
-						<h2><a href="https://developers.arcgis.com/javascript/jsapi/layer-amd.html" target="_blank">Layer</a></h2>
-						<ul>
-							<li>
-								<a href="https://developers.arcgis.com/javascript/jsapi/tiledmapservicelayer-amd.html" target="_blank">Tiled layer</a>
-								<ul>
-									<li><a href="https://developers.arcgis.com/javascript/jsapi/arcgistiledmapservicelayer-amd.html" target="_blank">ArcGISTiledMapServiceLayer</a></li>
-									<li><a href="https://developers.arcgis.com/javascript/jsapi/wmtslayer-amd.html">WMTSLayer</a></li>
-								</ul>
-							</li>
+						<h2 style="text-transform:capitalize">Navigation工具</h2>
+						<a class="jsbin-embed" href="http://jsbin.com/maxefu/2/embed?js,output">Navigation toolbar</a><script src="http://static.jsbin.com/js/embed.js"></script>
+						<a href="https://developers.arcgis.com/javascript/jsapi/navigation-amd.html" target="_blank">API說明</a>
+					</section>
+				</section>
+				
+				<!-- Layer -->
+				<section>
+					<section>
+						<h1>圖層(Layer)</h1>
+					</section>
+			
+					<section>
+						<h2>在地圖上加入圖層流程</h2>
+						<ol>
+							<li>了解各種服務</li>
+							<li>決定圖層種類</li>
+							<li>載入模組</li>
+							<li>建立圖層物件</li>
+							<li>將圖層加到地圖上</li>
+						</ol>
+					</section>
 
-							<li><a href="">Dynamic layer</a></li>
-							<li><a href="">Feature layer</a></li>
-							<li><a href="">Graphics layer</a></li>
+					<section>
+						<h2>了解各種服務細節</h2>
+						<ul>
+							<li class="fragment">服務網址</li>
+							<li class="fragment">geographic extent</li>
+							<li class="fragment">是否有快取</li>
+							<li class="fragment">座標系統</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>圖層種類</h2>
+						<img src="image/layer/layer.jpg" title="Layer Type" alt="Layer Type">
+					</section>
+
+					<section>
+						<h2 style="text-transform:capitalize">載入模組</h2>
+						<img src="image/layer/findModule.png" title="Find Module" alt="find Module">
+					</section>
+
+					<section>
+						<h2>建立圖層物件</h2>
+						<p style="fontSize:24px">使用<strong style="color:red">new</strong>建立物件</p>
+					</section>
+
+					<section>
+						<h2>加入圖層</h2>
+						<ul>
+							<li><a href="https://developers.arcgis.com/javascript/jsapi/map-amd.html#addlayer" target="_blank">map.addLayer(layer)</a></li>
+							<li><a href="https://developers.arcgis.com/javascript/jsapi/map-amd.html#addlayers" target="_blank">map.addLayers([layer1, layer2, ...])</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>注意事項</h2>
+						<ul>
+							<li>圖層順序</li>
+							<li>地圖與圖層的座標系統</li>
 						</ul>
 					</section>
 
 				</section>
-				
+
 				<!-- Widget -->
 				<section>
 					<section>
 						<h1>小工具(widget)</h1>
 					</section>
 
+					<section>
+						<h2 style="text-transform:capitalize">底圖工具(BasemapGallery)</h2>
+						<a class="jsbin-embed" href="http://jsbin.com/qogago/3/embed?js,output">Basemap Gallery</a><script src="http://static.jsbin.com/js/embed.js"></script>
+					</section>
+
+					<section>
+						<h2 style="text-transform:capitalize">書籤工具(Bookmark)</h2>
+						<a class="jsbin-embed" href="http://jsbin.com/neqecu/2/embed?js,output">Bookmark</a><script src="http://static.jsbin.com/js/embed.js"></script>
+					</section>
+				</section>
+
+				<!-- Task -->
+				<section>
+					<section>
+						<h1>Task</h1>
+					</section>
 				</section>
 
 			</div>
